@@ -57,7 +57,7 @@ async def logUserBot():
             
         try:
             for i in groups_info:
-                if i['group_name'] not in ["Spam 2024","RESPALDO🇵🇪BINS PERU","➳𝒀𝑨𝑷𝑬 𝑫𝑬 𝑬𝑺𝑻𝑨𝑭𝑨𝑫𝑶𝑹𝑬𝑺 ✧","QUEMANDO ESTAFADORES","𝐏𝐄𝐑Ú 𝐀𝐘𝐔𝐃𝐀","Referencias Elmer 💸","🎭 CANAL MUNDO STREAMING PERÚ 🇵🇪","TU MARKETPLACE"]:
+                if i['group_name'] not in ["Spam 2024","REFERENCIAS SAMAEL 👹🇵🇪","RESPALDO🇵🇪BINS PERU","➳𝒀𝑨𝑷𝑬 𝑫𝑬 𝑬𝑺𝑻𝑨𝑭𝑨𝑫𝑶𝑹𝑬𝑺 ✧","QUEMANDO ESTAFADORES","𝐏𝐄𝐑Ú 𝐀𝐘𝐔𝐃𝐀","Referencias Elmer 💸","🎭 CANAL MUNDO STREAMING PERÚ 🇵🇪","TU MARKETPLACE"]:
                     j=0
                     for message_spam in messages_list:
                         j+=1
@@ -70,7 +70,7 @@ async def logUserBot():
                         if resultado:
                             await client.send_message("@CoronadoBI", f'<b>Mensaje enviado a {i["group_id"]}</b> - <code>{i["group_name"]}</code>',parse_mode="HTML")  
                         await asyncio.sleep(10)
-                        if j==5: break
+                        if j==3: break
             await client.send_message("@CoronadoBI", f'<b>RONDA ACABADA</b>', parse_mode="HTML")
             await asyncio.sleep(300) 
         except:
